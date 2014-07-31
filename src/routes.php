@@ -12,6 +12,10 @@ Route::get('/forgot-password', array(
     'uses' => 'Rtoya\Signin\SigninController@getForgotPassword',
     'as'   => 'signin.forgotpassword'));
 
+Route::get('/signout', array(
+    'uses' => 'Rtoya\Signin\SigninController@getLogout',
+    'as'   => 'signin.signout'));
+
 Route::get('/logout', array(
     'uses' => 'Rtoya\Signin\SigninController@getLogout',
     'as'   => 'signin.logout'));
